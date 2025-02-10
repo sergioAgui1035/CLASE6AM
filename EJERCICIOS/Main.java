@@ -6,6 +6,7 @@ public class Main {
         int[][] matriz = metodos.CrearMatriz(6);
         metodos.SumarMatriz(matriz);
         metodos.MostrarPares(matriz);
+        //Se muestran numeros impares
         metodos.MostrarImpares(matriz);
     }
     

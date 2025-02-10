@@ -1,14 +1,37 @@
 package EJERCICIOS;
-public class Main {
 
-    public static void main(){
-        Metodos metodos = new Metodos();
-        int[][] matriz = metodos.CrearMatriz(6);
-        metodos.SumarMatriz(matriz);
-        //Se muestran numeros pares
-        metodos.MostrarPares(matriz);
-        //Se muestran numeros impares
-        metodos.MostrarImpares(matriz);
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        MetodosGenerales metodos = new MetodosGenerales();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Elija un punto del 1 al 11");
+        int punto = sc.nextInt();
+
+        int[][] matriz = metodos.CrearMatriz(punto);
+
+        switch (punto) {
+            case 1:
+                Punto1 p1 = new Punto1();
+                p1.SumarMatriz(matriz);
+                break;
+            case 2:
+                Punto2 p2 = new Punto2();
+                p2.MostrarPosicionNumeroMasAlto(matriz);
+                break;
+            default:
+                break;
+        }
+
+
+       
+
+  
+        //metodos.SumarMatriz(matriz);
+        //metodos.MostrarPares(matriz);
+        //metodos.MostrarImpares(matriz);
+
     }
     
 }

@@ -23,6 +23,28 @@ public class Metodos {
         return suma;
     }
 
-    
+    public void MostrarPares(int[][] matriz){
+        System.out.println("Numeros pares:");
+        for(int i=0; i>matriz.length; i++){
+            for(int j=0; j<matriz.length; i++){
+                if (matriz[i][j]%2 == 0) {
+                    System.out.print(" - "+matriz[i][j]);
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public void MostrarImpares(int[][] matriz){
+        System.out.println("Numeros impares:");
+        for(int i=0; i>matriz.length; i++){
+            for(int j=0; j<matriz.length; i++){
+                if (matriz[i][j]%2 != 0) {
+                    System.out.print(" - "+matriz[i][j]);
+                }
+            }
+            System.out.println();
+        }
+    }    
 
 }

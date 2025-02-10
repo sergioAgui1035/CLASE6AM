@@ -5,7 +5,8 @@ public class Main {
         Metodos metodos = new Metodos();
         int[][] matriz = metodos.CrearMatriz(6);
         metodos.SumarMatriz(matriz);
-        
+        metodos.MostrarPares(matriz);
+        metodos.MostrarImpares(matriz);
     }
     
 }

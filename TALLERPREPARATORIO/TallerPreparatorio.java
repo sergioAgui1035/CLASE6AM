@@ -1,8 +1,8 @@
-package EJERCICIOS;
+package TALLERPREPARATORIO;
 
 import java.util.Scanner;
 
-public class Main {
+public class TallerPreparatorio {
     public static void main(String[] args) {
         MetodosGenerales metodos = new MetodosGenerales();
         Scanner sc = new Scanner(System.in);

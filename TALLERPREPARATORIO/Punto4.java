@@ -2,7 +2,7 @@ package TALLERPREPARATORIO;
 
 import TALLERPREPARATORIO.Modelos.Libro;
 
-public class Punto3 {
+public class Punto4 {
     
     public void precioMasAlto (Libro[][] libros){
         for(int i=0; i<libros.length; i++){

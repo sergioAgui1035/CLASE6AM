@@ -3,12 +3,14 @@ package TALLERPREPARATORIO;
 import TALLERPREPARATORIO.Modelos.Producto;
 
 public class Punto2 {
-    public int punto1 (Producto[] productos, String nombreProducto){
+    public void cantidadTotal (Producto[][] productos){
         int cantidadTotal=0;
         for(int i=0; i<productos.length; i++){
-            cantidadTotal =+ productos[i].cantidad;
+            for (int j = 0; j < productos.length; j++) {
+                cantidadTotal =+ productos[i][j].cantidad;
+            }
         
         }
-        return cantidadTotal;
+        System.out.println("La cantidad de todos los productos es: "+cantidadTotal);
     }
 }

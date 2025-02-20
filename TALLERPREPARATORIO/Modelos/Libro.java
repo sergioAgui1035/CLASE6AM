@@ -1,13 +1,12 @@
 package TALLERPREPARATORIO.Modelos;
 
-import java.math.BigDecimal;
 
 public class Libro {
     
     public String titulo;
     public String autor;
-    public BigDecimal precio;
-    
+    public int precio;
+
     public String getTitulo() {
         return titulo;
     }
@@ -20,10 +19,10 @@ public class Libro {
     public void setAutor(String autor) {
         this.autor = autor;
     }
-    public BigDecimal getPrecio() {
+    public int getPrecio() {
         return precio;
     }
-    public void setPrecio(BigDecimal precio) {
+    public void setPrecio(int precio) {
         this.precio = precio;
     }
 

@@ -26,7 +26,7 @@ public class TallerPreparatorio {
         switch (punto) {
             case 1:
                 Punto1 p1 = new Punto1();
-                matrizProducto = metodos.LlenarMatrizProducto(dimension);
+                matrizProducto = metodos.LlenarMatrizProducto(matrizProducto);
                 System.out.println("Ingrese el nombre del producto que quiere buscar: ");
                 while (sc.hasNext()) {
                     System.out.println("Dato incorrecto.");
@@ -37,12 +37,12 @@ public class TallerPreparatorio {
                 break;
             case 2:
                 Punto2 p2 = new Punto2();
-                matrizProducto = metodos.LlenarMatrizProducto(dimension);
+                matrizProducto = metodos.LlenarMatrizProducto(matrizProducto);
                 p2.cantidadTotal(matrizProducto);
                 break;
             case 3:
                 Punto3 p3 = new Punto3();
-                matrizLibro = metodos.LlenarMatrizLibro(dimension);
+                matrizLibro = metodos.LlenarMatrizLibro(matrizLibro);
                 p3.precioMasAlto(matrizLibro);
                 break;
             default:
